@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: center; /* Centraliza o conteúdo do header */
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     background-color: #333;
     color: #fff;
     position: relative; /* Para permitir centralização */
@@ -23,18 +23,19 @@ header .logo {
     font-size: 1.5em;
     font-weight: bold;
     position: absolute; /* Para permitir que o logo fique à esquerda */
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: block; /* Altera para block para exibir verticalmente */
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-bottom: 10px; /* Espaçamento entre itens da lista */
 }
 
 nav ul li a {
@@ -212,6 +213,7 @@ footer {
     justify-content: center;
     gap: 10px;
     margin: 20px 0;
+    flex-wrap: wrap; /* Para ajustar melhor os itens na tela */
 }
 
 .skills-box ul {
@@ -220,6 +222,7 @@ footer {
     margin: 0;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap; /* Para ajustar melhor os itens na tela */
 }
 
 .skills-box ul li {
@@ -228,6 +231,9 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 10px 20px;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
 }
 
 .skills-box ul li a {
@@ -241,21 +247,65 @@ footer {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-.skills-box ul li a:hover {
-    text-decoration: underline;
-}
-/* Estilo para os ícones sociais */
-.social-links {
-    margin-top: 10px;
+.skills-box .icon-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Para ajustar melhor os itens na tela */
 }
 
-.social-icon {
-    font-size: 24px;
-    margin: 0 10px;
-    color: #333; /* Cor neutra, ajuste conforme necessário */
-    transition: color 0.3s ease;
+.skills-box .icon-container a {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.social-icon:hover {
-    color: #007bff; /* Cor de destaque ao passar o mouse, ajuste conforme necessário */
+.skills-box .icon-container a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* CSS para a barra lateral */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding-top: 60px; /* Espaço para o header */
+    transform: translateX(-250px); /* Inicialmente oculta */
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.active {
+    transform: translateX(0); /* Exibe a barra lateral */
+}
+
+.menu-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
 }

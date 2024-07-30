@@ -1,57 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Thomas Louzada</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav class="sidebar">
-        <ul>
-            <li><a href="#quem-sou-eu"><i class="fas fa-user"></i></a></li>
-            <li><a href="#projetos"><i class="fas fa-code"></i></a></li>
-            <li><a href="#habilidades"><i class="fas fa-cogs"></i></a></li>
-            <li><a href="#contato"><i class="fas fa-envelope"></i></a></li>
-        </ul>
-    </nav>
     <header>
-        <h1>Meu Portfólio</h1>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#motivos">Reasons</a></li>
+                <li><a href="#projetos">Projects</a></li>
+                <li><a href="#sobre">About</a></li>
+                <li><a href="#contato">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section id="quem-sou-eu">
-            <h2>Quem Sou Eu</h2>
-            <p>Sou um dev front-end que adoraria te ajudar com a criação de um site para alavancar sua loja ou blog pessoal,com conhecimentos em HTML, CSS, JavaScript e mais, creio que vamos construir um ótimo site juntos!</p>
-        </section>
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <p>Aqui estão alguns dos meus projetos recentes:</p>
-            <ul>
-                <li><a href="https://github.com/Thomas-Louzada/IC" target="_blank">Projeto de otimização linear com Python</a></li>
-                <li><a href="https://barbaraimobiliaria.com" target="_blank">Projeto de site de Imobiliária</a></li>
-                <li><a href="https://thomas-santesso.github.io/siteengenheiro.github.io/" target="_blank">Projeto Portfólio para Engenheiro</a></li>
-                <li><a href="https://thomas-santesso.github.io/pokedex/" target="_blank">Projeto de Pokedéx</a></li>
-                <li><a href="https://thomas-santesso.github.io/tetris-game/" target="_blank">Projeto de Tetris</a></li>
-                <li><a href="https://thomas-santesso.github.io/market-place-musical/" target="_blank">Porjeto Marketplace Musical</a></li>
-            </ul>
-        </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <p>Minhas principais habilidades incluem:</p>
-            <ul>
-                <li>HTML <span class="stars">★★★★★</span></li>
-                <li>Python <span class="stars">★★★★★</span></li>
-                <li>CSS <span class="stars">★★★☆☆</span></li>
-                <li>JavaScript <span class="stars">★★★☆☆</span></li>
-                <li>WordPress <span class="stars">★★☆☆☆</span></li>
-            </ul>
-        </section>
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato comigo através do email: <a href="mailto:thomasldeveloper@gmail.com">thomasldeveloper@gmail.com</a></p>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
+
+    <section id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Front-End Developer</p>
+        <a href="#projetos" class="cta">See my projects</a>
+    </section>
+
+    <section id="motivos" class="about">
+        <h2>Why make a website?</h2>
+        <p>For those of you who have a physical store, a website can boost your sales by 22%! With more sales and more impressions in the digital environment, your business will give you much more return and profit. Physical borders exist, digital ones do not. Get more customers and show your services to more people! Don't waste time, get in touch now to get your budget.</p>
+    </section>
+
+    <section id="projetos" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Cards de projetos -->
+            <div class="project-card">
+                <h3>Johnson Solid</h3>
+                <p>What if with just a little information you built a solid?</p>
+                <a href="projeto1.html" class="project-link">See More</a>
+            </div>
+            <div class="project-card">
+                <h3>Tetris</h3>
+                <p>Not every project is a website, how about having fun?</p>
+                <a href="projeto2.html" class="project-link">See More</a>
+            </div>
+            <div class="project-card">
+                <h3>Producer Marketplace</h3>
+                <p>Are you a music producer or work with audio? How about having your portfolio?</p>
+                <a href="projeto3.html" class="project-link">See More</a>
+            </div>
+            <div class="project-card">
+                <h3>Pokedéx</h3>
+                <p>Gotta Catch ‘Em All!</p>
+                <a href="projeto4.html" class="project-link">See More</a>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio for Engineers</h3>
+                <p>How about showing the world your work?</p>
+                <a href="projeto6.html" class="project-link">See More</a>
+            </div>
+            <div class="project-card">
+                <h3>Real Estate Website</h3>
+                <p>A proposal on how websites can be useful in sales!</p>
+                <a href="projeto5.html" class="project-link">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div>
+            <h2>About me</h2>
+            <p>I am a developer who focuses mainly on the Front-End, but with Back-End projects and knowledge in the area of ​​game development. Currently I'm a student at the University of São Paulo, at the Institute of Mathematics and Statistics. I am willing and prepared to make your sales increase exponentially, your projects will no longer be just a vague idea and will become reality!</p>
+            <p>I have hobbies such as building computers, playing the guitar, doing some magic tricks, as well as having knowledge in some areas of music. Native speaker of Portuguese, but with intermediate Italian, Spanish and English.</p>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Contact</h2>
+        <h3>Do you want your online project to become a reality? Get in touch and ask for your quote!</h3>
+        <p>Email: <a href="mailto:thomasldeveloper@gmail.com">thomasldeveloper@gmail.com</a></p>
+        <div class="social-links">
+            <a href="https://wa.me/5511944823399?text=Ol%C3%A1!%20Gostaria%20de%20saber%20um%20or%C3%A7amento%20para%20meu%20projeto!" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/de_lirow/?hl=en" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>

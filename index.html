@@ -10,19 +10,16 @@
 <body>
     <header>
         <div class="logo">My Portfolio</div>
-        <button class="menu-btn" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
-    </header>
-
-    <div id="sidebar" class="sidebar">
         <nav>
             <ul>
                 <li><a href="#motivos">Reasons</a></li>
                 <li><a href="#projetos">Projects</a></li>
                 <li><a href="#sobre">About</a></li>
+                <li><a href="#contato">Contact</a></li>
                 <li><a href="https://wa.me/5511944823399?text=Ol%C3%A1!%20Gostaria%20de%20saber%20um%20or%C3%A7amento%20para%20meu%20projeto!" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
 
     <section id="home" class="hero">
         <h1>Welcome to My Portfolio</h1>
@@ -89,21 +86,5 @@
     <footer>
         <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>
-    <script>
-        function toggleSidebar() {
-            document.getElementById('sidebar').classList.toggle('active');
-        }
-
-        // Adiciona funcionalidade de hover para mostrar a barra lateral
-        document.addEventListener('DOMContentLoaded', function() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.addEventListener('mouseenter', function() {
-                sidebar.classList.add('active');
-            });
-            sidebar.addEventListener('mouseleave', function() {
-                sidebar.classList.remove('active');
-            });
-        });
-    </script>
 </body>
 </html>
